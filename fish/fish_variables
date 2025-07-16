@@ -1,0 +1,46 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export FFMPEG_DIR:/opt/homebrew/opt/ffmpeg\x404/lib/
+SETUVAR --export FFMPEG_ROOT:/opt/homebrew/opt/ffmpeg\x404
+SETUVAR --export --path PATH:/Library/Frameworks/Python\x2eframework/Versions/3\x2e12/bin\x1e/Users/cakard/miniconda3/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Library/Apple/usr/bin\x1e/usr/local/go/bin\x1e/usr/local/MacGPG2/bin\x1e/Library/Frameworks/Python\x2eframework/Versions/3\x2e12/bin\x1e/Users/cakard/miniconda3/bin\x1e/opt/homebrew/bin\x1e/Users/cakard/go/bin\x1e/Users/cakard/\x2edocker/bin\x1e/Users/cakard/Library/Python/3\x2e9/bin\x1e/opt/homebrew/bin\x1e/Users/cakard/go/bin\x1e/Users/cakard/\x2edocker/bin\x1e/Users/cakard/Library/Python/3\x2e9/bin
+SETUVAR --export PHAAS_GO_LIB_DEVTOOLS:/Users/cakard/go/src/github\x2ecom/BidPal/phaas\x2dgo\x2dlib/devtools
+SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_devdbconnect:kubectl\x20\x2dn\x20dev\x20port\x2dforward\x20aurora\x2dproxy\x2drw\x2d0\x209999\x3a3306
+SETUVAR _fish_abbr_devdbpass:kubectl\x20\x2d\x2dnamespace\x20dev\x20get\x20secret\x20engineer\x2dcakard\x20\x2d\x2dtemplate\x3d\x22\x7b\x7bindex\x20\x2edata\x20\x5c\x22db\x2dpassword\x5c\x22\x7c\x20base64decode\x20\x7d\x7d\x22
+SETUVAR _fish_abbr_devdbuser:kubectl\x20get\x20secret\x20phaas\x2droot\x2ddb\x20\x2do\x20jsonpath\x3d\x22\x7b\x2edata\x2eusername\x7d\x22\x20\x7c\x20base64\x20\x2d\x2ddecode
+SETUVAR _fish_abbr_gba:git\x20branch\x20\x2da
+SETUVAR _fish_abbr_gbd:git\x20branch\x20\x2dD
+SETUVAR _fish_abbr_gcb:git\x20checkout\x20\x2db
+SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fish_abbr_glog:git\x20log\x20\x2d\x2dgraph\x20\x2d\x2dabbrev\x2dcommit\x20\x2d\x2ddecorate\x20\x2d\x2dformat\x3dformat\x3a\x22\x25C\x28bold\x20blue\x29\x25h\x25C\x28reset\x29\x20\x2d\x20\x25C\x28bold\x20green\x29\x28\x25ar\x29\x25C\x28reset\x29\x20\x25C\x28white\x29\x25s\x25C\x28reset\x29\x20\x25C\x28dim\x20white\x29\x2d\x20\x25an\x25C\x28reset\x29\x25C\x28bold\x20yellow\x29\x25d\x25C\x28reset\x29\x22\x20\x2d\x2dall
+SETUVAR _fish_abbr_glogb:git\x20log\x20\x2d\x2dgraph\x20\x2d\x2dabbrev\x2dcommit\x20\x2d\x2ddecorate\x20\x2d\x2dformat\x3dformat\x3a\x22\x25C\x28bold\x20blue\x29\x25h\x25C\x28reset\x29\x20\x2d\x20\x25C\x28bold\x20green\x29\x28\x25ar\x29\x25C\x28reset\x29\x20\x25C\x28white\x29\x25s\x25C\x28reset\x29\x20\x25C\x28dim\x20white\x29\x2d\x20\x25an\x25C\x28reset\x29\x25C\x28bold\x20yellow\x29\x25d\x25C\x28reset\x29\x22
+SETUVAR _fish_abbr_gst:git\x20status
+SETUVAR _fish_abbr_gud:git\x20fetch\x20\x2d\x2dprune\x20\x2d\x2dtags\x3b\x20and\x20git\x20rebase
+SETUVAR fish_color_autosuggestion:555\x1ebrblack
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:005fd7
+SETUVAR fish_color_comment:990000
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:009900
+SETUVAR fish_color_error:ff0000
+SETUVAR fish_color_escape:00a6b2
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:00a6b2
+SETUVAR fish_color_param:00afff
+SETUVAR fish_color_quote:999900
+SETUVAR fish_color_redirection:00afff
+SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:\x1d
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow
+SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
