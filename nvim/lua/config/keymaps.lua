@@ -3,10 +3,3 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "jk", "<Esc>")
-
--- " Moving between windows (from Ben Frain's talk at NeovimConf 2022)Add commentMore actions
-for i = 1, 6 do
-  local lhs = "<leader>" .. i
-  local rhs = i .. "<c-w>w"
-  vim.keymap.set("n", lhs, rhs, { desc = "Move to window " .. i })
-end
