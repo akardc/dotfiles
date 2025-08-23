@@ -74,9 +74,9 @@ config.keys = {
 		}),
 	},
 	{
-		-- <LEADER>p
-		label = "Move between panes",
-		key = "p",
+		-- <LEADER>w
+		label = "Mowe between panes",
+		key = "w",
 		mods = "LEADER",
 		action = wezterm.action.ActivateKeyTable({
 			name = "move_between_panes",
