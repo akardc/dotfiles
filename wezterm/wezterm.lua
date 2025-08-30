@@ -106,24 +106,8 @@ wezterm.on("update-right-status", function(window, pane)
 	window:set_right_status(wezterm.format(elements))
 end)
 
--- local allConfigs = {
--- 	require('config.keymaps'),
--- 	require('config.appearance'),
--- }
--- for _, c in ipairs(allConfigs) do
--- 	for k, v in pairs(c) do config[k] = v end
--- end
-
-local c = require("config.keymaps")
-for k, v in pairs(c) do
-	config[k] = v
-end
-
-c = require("config.appearance")
-for k, v in pairs(c) do
-	config[k] = v
-end
-
-require("config.workspaces").init_workspace_settings(config)
+require("config.keymaps").apply_to_config(config)
+require("config.appearance").apply_to_config(config)
+require("config.workspaces").apply_to_config(config)
 
 return config

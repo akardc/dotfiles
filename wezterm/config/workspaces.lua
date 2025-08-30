@@ -2,10 +2,10 @@ local wezterm = require("wezterm")
 local resurrect = wezterm.plugin.require("https://github.com/MLFlexer/resurrect.wezterm")
 local workspace_switcher = wezterm.plugin.require("https://github.com/MLFlexer/smart_workspace_switcher.wezterm")
 
-local M = {}
+local pub = {}
 
 ---@param config {keys: table, key_tables: table } Wezterm config
-function M.init_workspace_settings(config)
+function pub.apply_to_config(config)
 	wezterm.on("smart_workspace_switcher.workspace_switcher.created", function(window, path, label)
 		local workspace_state = resurrect.workspace_state
 
@@ -170,4 +170,4 @@ function M.init_workspace_settings(config)
 	return config
 end
 
-return M
+return pub
