@@ -4,7 +4,8 @@ end
 
 set -x PHAAS_PIPELINE_CLONE_PATH ~/onecause/phaas-pipeline
 
-set -x AWS_PROFILE bidpal-dev
+# set -x AWS_PROFILE bidpal-dev
+set -x AWS_PROFILE prod-engineer
 set -x DEV_AWS_PROFILE bidpal-dev
 
 set -x ONECAUSEDEV 1
@@ -38,3 +39,9 @@ set -ax NVM_DIR "$HOME/.nvm"
 
 # requires https://starship.rs/
 starship init fish | source
+
+# requires https://github.com/ajeetdsouza/zoxide
+zoxide init fish | source
+
+# requires https://github.com/junegunn/fzf
+fzf --fish | source

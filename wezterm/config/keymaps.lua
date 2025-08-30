@@ -75,7 +75,7 @@ config.keys = {
 	},
 	{
 		-- <LEADER>w
-		label = "Mowe between panes",
+		label = "Move between panes",
 		key = "w",
 		mods = "LEADER",
 		action = wezterm.action.ActivateKeyTable({
