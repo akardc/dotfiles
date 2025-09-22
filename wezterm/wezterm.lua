@@ -45,6 +45,8 @@ wezterm.on("update-right-status", function(window, pane)
 		table.insert(cells, cwd)
 	end
 
+	table.insert(cells, window:active_workspace())
+
 	-- I like my date/time in this style: "Wed Mar 3 08:14"
 	local date = wezterm.strftime("%a %b %-d %I:%M %P")
 	table.insert(cells, date)

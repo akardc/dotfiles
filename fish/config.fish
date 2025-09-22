@@ -45,3 +45,7 @@ zoxide init fish | source
 
 # requires https://github.com/junegunn/fzf
 fzf --fish | source
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
