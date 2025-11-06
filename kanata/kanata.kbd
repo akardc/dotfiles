@@ -10,20 +10,21 @@
   fn rmet
 )
 (defvar
+  weak-hold-time 250
   tap-time 150
-  hold-time 250
+  hold-time 200
 )
 
 (defalias
   escctrl (tap-hold 100 150 esc lctl)
-  a (tap-hold $tap-time $hold-time a lmet)
-  s (tap-hold $tap-time $hold-time s lalt)
+  a (tap-hold $tap-time $weak-hold-time a lmet)
+  s (tap-hold $tap-time $weak-hold-time s lalt)
   d (tap-hold $tap-time $hold-time d lsft)
   f (tap-hold $tap-time $hold-time f lctl)
   j (tap-hold $tap-time $hold-time j rctl)
   k (tap-hold $tap-time $hold-time k rsft)
-  l (tap-hold $tap-time $hold-time l ralt)
-  ; (tap-hold $tap-time $hold-time ; rmet)
+  l (tap-hold $tap-time $weak-hold-time l ralt)
+  ; (tap-hold $tap-time $weak-hold-time ; rmet)
   fnl (tap-hold 200 200 fn (layer-toggle fn))
   rmetarr (tap-hold 200 200 rmet (layer-toggle rmet))
 )
