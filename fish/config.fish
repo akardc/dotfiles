@@ -26,6 +26,7 @@ set -ax PATH /Users/cakard/.config/herd-lite/bin
 set -x DEV_AURORA_USER cakard@onecause.com
 # set -x DEV_AURORA_PASS $(phaas-dev-cli db token)
 
+set -x EDITOR nvim
 
 
 # Setting PATH for Python 3.12
