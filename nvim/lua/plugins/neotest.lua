@@ -2,6 +2,7 @@ return {
   {
     "nvim-neotest/neotest",
     dependencies = {
+      "nvim-neotest/nvim-nio",
       "nvim-contrib/nvim-ginkgo",
       "nvim-neotest/neotest-jest",
       "nvim-neotest/neotest-go",
