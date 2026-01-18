@@ -16,11 +16,11 @@ set -x PHAASDEVCLI_SEQUEL_ACE_PASS "Sequel Ace : phaas-prod-dev-v3-rw (-20810590
 set -x PHAAS_SNS_TOPIC_ARN "arn:aws:sns:us-east-2:411971060769:cpa-service-topic"
 set -x PHAAS_SQS_QUEUE_NAME cpa-test
 
-set -ax PATH /opt/homebrew/bin
-set -ax PATH /Users/cakard/go/bin
-set -ax PATH /Users/cakard/.docker/bin
-set -ax PATH /Users/cakard/Library/Python/3.9/bin
-set -ax PATH /Users/cakard/.config/herd-lite/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path /Users/cakard/go/bin
+fish_add_path /Users/cakard/.docker/bin
+fish_add_path /Users/cakard/Library/Python/3.9/bin
+fish_add_path /Users/cakard/.config/herd-lite/bin
 
 
 set -x DEV_AURORA_USER cakard@onecause.com
@@ -31,7 +31,7 @@ set -x EDITOR nvim
 
 # Setting PATH for Python 3.12
 # The original version is saved in /Users/cakard/.config/fish/config.fish.pysave
-set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
+fish_add_path "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
 
 # nvm/node version
 set -ax NVM_DIR "$HOME/.nvm"
@@ -53,3 +53,5 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 # opencode
 fish_add_path /Users/cakard/.opencode/bin
+fish_add_path $HOME/.local/bin
+fish_add_path /Applications/MySQLWorkbench.app/Contents/MacOS
