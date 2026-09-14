@@ -3,6 +3,13 @@ return {
     "folke/snacks.nvim",
     opts = {
       zen = {
+        toggles = {
+          dim = false,
+          git_signs = true,
+          mini_diff_signs = true,
+          diagnostics = true,
+          inlay_hints = true,
+        },
         show = {
           statusline = true,
           tabline = true,
